@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <script src="https://kit.fontawesome.com/365f139c67.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -23,7 +24,7 @@
                 </div>
                 <div class="col-12 col-lg-4">
                     <address class="col-12 text-dark text-center text-sm-center text-md-right mt-1" id="adresse">12 Rue Camille Devouassoux 62800 Liévin</address>
-                    <p class="col-12 text-dark text-center text-sm-center text-md-right mt-1" id="adresse">Tel : 06.51.05.96.75</p>
+                    <p class="col-12 text-dark text-center text-sm-center text-md-right mt-1" id="tel">Tel : 06.51.05.96.75</p>
                     <p class="col-12 text-center text-sm-center text-md-right" id="email"><a href="mailto:nicolas.gomiero.pro@outlook.fr" class="badge badge-dark">nicolas.gomiero.pro@outlook.fr</a></p>
 
                 </div>
@@ -39,13 +40,13 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#experiences">Expériences <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" id="ancreExp" href="#experiences">Expériences <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#formation">Formation</a>
+                        <a class="nav-link" id="ancreFormation" href="#formation">Formation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#interets" tabindex="-1" aria-disabled="true">Intérêts</a>
+                        <a class="nav-link" id="ancreInterets" href="#interets" tabindex="-1" aria-disabled="true">Intérêts</a>
                     </li>
                 </ul>
             </div>
@@ -60,7 +61,7 @@
                 <div class="card-header" id="headingOne">
                     <h3 class="mb-0" id="experiences">
                         <button class="btn btn-link btn-outline-dark text-danger font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Expériences Professionnelles<img src="images/chevron-down-solid.svg" class="img-fluid rounded" alt="Rubrique suivante" style="height: 3vh; width: 3vw;">
+                            Expériences Professionnelles <img src="images/chevron-down-solid.svg" class="img-fluid rounded" alt="Rubrique suivante" style="height: 3vh; width: 3vw;">
                         </button>
                     </h3>
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -85,7 +86,7 @@
                 <div class="card-header" id="headingTwo">
                     <h3 class="mb-0" id="formation">
                     <button class="btn btn-link collapsed btn-outline-dark text-danger font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Formation<img src="images/chevron-down-solid.svg" class="img-fluid rounded" alt="Rubrique suivante" style="height: 3vh; width: 3vw;">
+                    Formation <img src="images/chevron-down-solid.svg" class="img-fluid rounded" alt="Rubrique suivante" style="height: 3vh; width: 3vw;">
                     </button>
                     </h3>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -101,7 +102,7 @@
                 <div class="card-header" id="headingThree">
                     <h3 class="mb-0" id="interets">
                     <button class="btn btn-link collapsed btn-outline-dark text-danger font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Intérêts<img src="images/chevron-down-solid.svg" class="img-fluid rounded" alt="Rubrique suivante" style="height: 3vh; width: 3vw;">
+                        Intérêts <img src="images/chevron-down-solid.svg" class="img-fluid rounded" alt="Rubrique suivante" style="height: 3vh; width: 3vw;">
                     </button>
                     </h3>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -134,15 +135,15 @@
 
             <div>Javascript</div>
             <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #edda4f;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #edda4f;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
             </div>
             <div>PHP</div>
             <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 50%; background-color: #7f8ebb;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                <div class="progress-bar" role="progressbar" style="width: 100%; background-color: #7f8ebb;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
             </div>
             <div>Wordpress</div>
             <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 50%; background-color: #016087;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #016087;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
             </div>
             <div>Joomla</div>
             <div class="progress">
@@ -150,7 +151,11 @@
             </div>
             <div>MySQL</div>
             <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 25%; background: linear-gradient(to right, #00758F, #F29111);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                <div class="progress-bar" role="progressbar" style="width: 75%; background: linear-gradient(to right, #00758F, #F29111);" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+            <div>Laravel</div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 10%; background: linear-gradient(to right, #F05340, #6C6C6C);" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
             </div>
         </ASIDE>
     </div>
@@ -158,6 +163,9 @@
         <div class="row m-0 justify-content-center">
             <a href="https://www.linkedin.com/in/nicolas-gomiero-dwwm/" target="blank" title="Lnk">
                 <img src="images/LI-Bug.svg.original.svg" height="21px" alt="Lnk" title="Mon profil Linkedin" />
+            </a>
+            <a href="https://github.com/nicolasgomiero" target="blank" title="Github">
+                <img src="images/GitHub-Mark-Light-120px-plus.png" height="21px" alt="Github" title="Mon Github" />
             </a>
         </div>
         <p>Créé par Nicolas Gomiero</p>
@@ -171,8 +179,8 @@
     </div>
 
 
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
 </body>
 </html>

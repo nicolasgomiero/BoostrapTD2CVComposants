@@ -13,6 +13,10 @@ body {
     background-size: cover;
 }
 
+button img:after{
+
+}
+
 
 footer {
     position: fixed;
