@@ -2,6 +2,11 @@
 
 header {
     padding: 0;
+    margin: 0;
+}
+
+.row{
+    margin-right: 0;
 }
 
 
@@ -13,13 +18,25 @@ body {
     background-size: cover;
 }
 
-button img:after{
 
+
+/*button img{
+    transform : rotate(0);
+    transition : all 1s;
 }
+
+
+button img:hover{
+    transform : rotate(180deg);
+}*/
 
 
 footer {
     position: fixed;
+}
+
+.jumbotron{
+    background-color: transparent;
 }
 
 @media (max-width: 767.98px) {
